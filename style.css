@@ -1,0 +1,943 @@
+@font-face{
+    font-family: "Evogria";
+    src: url(fonts/Evogria\ Italic.otf);
+}
+
+:root {
+    --azul-gamesway: #1BB5F2;
+    --rosa-gamesway: #D9488B;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000F60;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    
+}
+
+.banner {
+    background-image:linear-gradient(90deg, rgba(76,74,179,0.35) 0%, rgba(157,3,86,0.35) 100%), url(img/imgfundo.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    
+
+    height: 100vh;
+
+}
+
+header{
+    height: 165px;
+}
+
+header button {
+    width: 50px;
+    
+    
+    display: none;
+}
+
+
+
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items:center;
+}
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    white-space: nowrap;
+    
+    
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: 'Evogria';
+    color: white;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease;
+    margin-left: 20%;
+    
+}
+
+.menu a:hover {
+    color: #D9488B;
+    
+    text-decoration-color: var(--rosa-gamesway);
+}
+
+.conteudo-banner{
+    height: calc(100vh - 280px);
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    word-wrap: break-word;
+    
+    
+
+    
+}
+
+.conteudo-banner p {
+    color: white;
+
+    font-family:"Louis George Cafe";
+    font-size: 28px;
+    text-align: left
+    
+    
+    
+    
+}
+
+.conteudo-banner span {
+    display: block;
+
+    overflow: hidden;
+    
+    border-right: 5px solid var(--laranja-gamifica);
+    white-space: nowrap;
+
+    animation: 
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite
+    ;
+
+    left: 20%;
+    
+}
+
+.logo {
+    
+    text-align: center;
+    position: relative;
+    bottom: 500px;
+    scale: 0.75;
+}   
+
+.conteudo-banner span1 {
+    color:#D9488B ;
+}
+
+.conteudo-banner span2 {
+    color: #1BB5F2;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    height: 400px;
+    width: 250px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+   padding-bottom: 20px;
+   margin-bottom: 40px;
+   margin-top: 40px;
+    
+   
+   
+   background-color: #000F60;
+
+
+    border-radius: 4px;
+
+    
+
+
+}
+
+.card img {
+    height: 55%;
+    width: 100%;
+
+    border-radius: 4px 4px 0px;
+}
+
+.card p {
+    color: white;
+
+    font-family:"Louis George Cafe";
+    font-size: 16px;
+
+    text-align: left;
+
+    padding: 7%;
+}
+
+.card button{
+    width: 90%;
+    height: 55px;
+    
+    background-color:var(--rosa-gamesway);
+
+    border: none;
+    border-radius: 15px;
+    color: white;
+
+    font-family: "Louis George Cafe";
+    font-size: 20px;
+    font-weight: 600;    
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+.card button:hover {
+    background-color:#ce176c;
+    
+}
+
+#o-que-e-gamificacao {
+    
+    
+    text-align: center;
+    margin-top: 70px;
+    padding: 50px;
+    background-color: #000F60;
+}
+
+h2{
+    color: white;
+    font-size: 32px;
+    font-family: "Louis George Cafe";
+    font-weight: bold;
+}
+
+#sobre {
+    height: 500px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    background-color: #000F60;
+
+    
+
+    
+}
+
+h2 {
+    
+    font-size: 32px;
+    color: white;
+    font-family: "Louis George Cafe";
+    margin-top: 150px;
+    
+
+}
+
+#sobre p {
+    font-size: 24px;
+    font-family: "Louis George Cafe";
+
+    text-align: left;
+    line-height: 1.5;
+    color: white;
+    margin-top: 50px;
+    scale: 90%;
+}
+
+#sobre span3 {
+    color: #D9488B;
+}
+
+.conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: color 500ms ease;
+}
+
+.conteudo-sobre img:hover {
+    transition: 500 ms ease;
+    color: #1BB5F2;
+    text-decoration-color: #1BB5F2;
+}
+
+.missao-visao-valores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    scale: 75%;
+    margin-top: 80px;
+
+    
+}
+
+.imagem {
+    scale: 77%;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+#cases {
+    margin-top: 1500px;
+    
+    text-align: center;
+    
+}
+
+.detalhe {
+    scale: 65%;
+    margin-bottom: 55%;
+    
+    
+}
+
+.container-cases {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 750px;
+    
+}
+
+.card-cases {
+    height: 400px;
+    width: 300px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content:space-between; 
+   align-items: center;
+
+   padding-bottom: 20px;
+   
+   
+    
+   
+   
+   background-color: #FFF8E2;
+
+
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+
+
+}
+
+.card-cases img {
+    height: 46%;
+    width: 85%;
+    padding: 10%;
+    position: relative;
+    margin-top: 50px;
+
+    border-radius: 4px 4px 0px;
+}
+
+.card-cases p {
+    color: rgb(0, 0, 0);
+
+    font-family: "Louis George Cafe";
+    font-size: 18px;
+
+    text-align: left;
+
+    padding: 7%;
+}
+
+.card-cases button{
+    width: 90%;
+    height: 40px;
+    
+    background-color:var(--rosa-gamesway);
+
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    font-family: "Louis George Cafe";
+    font-size: 17px;
+    font-weight: 600;    
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+.card-cases button:hover {
+    background-color: #aa2563;
+    
+}
+    
+
+#portfolio {
+    height: 150px;
+    
+    background-size: 250px;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+
+
+
+#portfolio .container-grid{
+    height: 80%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(61,57,255);
+    background: linear-gradient(90deg, rgba(61,57,255,0.7036064425770308) 0%, rgba(235,10,131,0.6980042016806722) 100%);
+    
+    bottom: 500px;
+    position: relative;
+    border-radius: 2%;
+    
+
+}
+
+#portfolio a {
+    width: fit-content;
+    color: white;
+    font-family: "Evogria";
+    font-size: 28px;
+    left: 260px;
+    position: relative;
+    
+}
+
+#portfolio a:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form {
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 80px;
+    background-color: var(--azul-gamesway);
+
+    color: rgb(0, 0, 0);
+    font-family: "Louis George Cafe";
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.campo input {
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: #bab5c4;
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: rgb(0, 0, 0);
+    background-color: #bab5c4;
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label, .campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea {
+    font-family: "Louis George Cafe";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--rosa-gamesway);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--rosa-gamesway);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Louis George Cafe";
+    font-weight: 700; /* Bold */
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #aa2563;
+}
+
+footer {
+    height: 290px;
+
+    background-color: black;
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais {
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: #fff;
+
+    font-family: "Anta";
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+    color: white;
+}
+
+.icones-redes a:hover {
+    color:var(--rosa-gamesway);
+}
+
+@media screen and (max-width: 1300px) {
+    .logo {
+    
+        text-align: center;
+        position: relative;
+        bottom: 350px;
+        scale: 0.5;
+    }   
+    header button {
+        width: 50px;
+        background: none;
+        border: none;
+
+    }
+
+    header svg {
+        fill: white;
+    }
+    
+    nav.menu {
+        height: 500px;
+        width: 300px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000b5;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+    .detalhe {
+        scale: 65%;
+        margin-bottom: 59%;
+        
+        
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .card {
+        height: 400px;
+        width: 250px;
+    
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+    
+       padding-bottom: 20px;
+       margin-bottom: 40px;
+       margin-top: 40px;
+        
+       
+       
+       background-color: #000F60;
+    
+    
+        border-radius: 4px;
+    
+        
+    
+    
+    }
+    
+    .card img {
+        height: 45%;
+        width: 80%;
+    
+        
+    }
+    
+    .card p {
+    
+        text-align: left;
+    
+        padding: 7%;
+    }
+    
+    .card button{
+        width: 65%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #sobre p {
+        font-size: 20px;
+    }
+
+    .imagem {
+        scale: 60%;
+        
+    }
+
+    .detalhe {
+        scale: 65%;
+        margin-bottom: 70%;
+        
+        
+    }
+
+    #portfolio a {
+        left: 98px;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 950px) {
+    .sobre p {
+        width: 200px;
+    }
+
+    .conteudo-sobre img {
+        display: none;
+    }
+    .missao-visao-valores {
+        scale: 0.6;
+        justify-content: space-between;
+        
+    }
+
+    .detalhe {
+        margin-bottom: 78%;
+    }
+
+    .card-cases {
+        height: 350px;
+        width: 250px;
+    }
+
+    .card-cases p{
+        font-size: 16px;
+    }
+
+    #portfolio a {
+        font-size: 25px;
+        left: 80px;
+    }
+
+    
+    #contato form{
+        width: 70%;
+    }
+
+    .campo,
+    .campo-descricao,
+    #contato form button{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        right: 100px;
+        scale: 0.45;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 250px;
+    } 
+    
+    .container-cards{
+        width: 110%;
+        right: 20px;
+        position: relative;
+    }
+
+    .card button{
+        position: relative;
+        bottom: 60px;
+    }
+
+    .missao-visao-valores{
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .imagem{
+        scale: 50%;
+        position: relative;
+        bottom: 100px;
+    }
+
+    #cases {
+        position: relative;
+        bottom: 350px;
+    }
+
+    .detalhe{
+        margin-bottom: 93%;
+        scale: 0.6;
+        padding: 5px;
+        
+    }
+
+    .container-cases{
+        scale: 0.8;
+        gap: 20px;
+    }
+
+    #portfolio .container-grid{
+        height: 60%;
+    }
+
+    #portfolio a {
+        font-size: 20px;
+    }
+
+    #portfolio{
+        position: relative;
+        bottom: 200px;
+    }
+
+    #contato{
+        position: relative;
+        bottom: 1000px;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    footer .container-grid{
+        padding: 80px;
+        flex-direction: column;
+    }
+
+    footer img{
+        margin-bottom: 100px;
+    }
+
+    footer p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .redes-sociais{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        scale: 0.35;
+    }
+
+    .conteudo-banner p {
+        font-size: 16px;
+    }
+
+    nav.menu {
+        height: 450px;
+        width: 220px;
+    } 
+
+    nav.menu a {
+        font-size: 16px;
+    }
+
+    .container-cards{
+        width: 128%;
+        right: 40px;
+        position: relative;
+    }
+
+    .card button {
+        font-size: 15px;
+    }
+
+    .missao-visao-valores{
+        scale: 0.5;
+    }
+
+    #sobre p {
+        font-size: 18px;
+    }
+
+    .imagem{
+        scale: 0.37;
+        position: relative;
+        bottom: 200px;
+    }
+
+    #cases{
+        position: relative;
+        bottom: 450px;
+    }
+
+    .detalhe{
+        margin-bottom: 120%;
+        
+    }
+
+    .container-cases p {
+        display: none;
+    }
+
+    .card-cases img {
+        height: 38%;
+    }
+
+    #portfolio a {
+        font-size: 18px;
+        left: 35px;
+    }
+}
+
+
